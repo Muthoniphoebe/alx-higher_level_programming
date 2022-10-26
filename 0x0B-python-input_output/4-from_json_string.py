@@ -1,16 +1,18 @@
 #!/usr/bin/python3
+"""Module 6-from_json_string.
+Returns an object (Python data structure)
+represented by a JSON string.
 """
-json to string module
-"""
+
+
 import json
 
 
-def to_json_string(my_obj):
-    """return Json object as string
-    args:
-        my_obj: object to convert
-    return:
-        object
+def from_json_string(my_str):
+    """Return the object represented my my_str.
+    Args:
+        - my_str: JSON string representation
+    Returns: corresponding object
     """
 
-    return json.dumps(my_obj)
+    return json.loads(my_str)
